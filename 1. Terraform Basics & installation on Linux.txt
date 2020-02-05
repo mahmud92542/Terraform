@@ -1,0 +1,38 @@
+Terraform is an open-source infrastructure as code software tool created by HashiCorp. 
+It enables users to define and provision a datacenter infrastructure using a high-level configuration language 
+known as Hashicorp Configuration Language, or optionally JSON.
+
+Installing Terraform on Linux OS (any linux OS)
+
+1. goto https://www.terraform.io/downloads.html
+
+2. Download Linux 32/64 bit zip file
+
+or input this command on you CLI,
+   
+    wget https://releases.hashicorp.com/terraform/0.11.5/terraform_0.11.5_linux_amd64.zip
+
+3. goto your download folder and move it to root
+
+4. unzip terraform file
+
+5. write './terraform' it will works
+
+6. now move unziped file to /bin
+
+7. write 'terraform' and it will work
+
+You can choose any IDE or Text Editor to write terraform but don't forget to install 'terraform packages'
+It'll help you during the writing time.
+
+#for more
+
+https://packagecontrol.io/
+
+#For sublime Text Editor
+
+https://packagecontrol.io/packages/Terraform
+
+#For Atom
+
+https://atom.io/packages/language-terraform

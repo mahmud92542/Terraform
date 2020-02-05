@@ -1,0 +1,13 @@
+Terraform has multiple providers
+
+We have to specify the provider details for which we want to launch the infrastructure for.
+
+While specifying the provider, we also have to add the tokens which will be used for authentication.
+
+Example: 
+	* AWS Access & Secrect Keys.
+	* Digital Ocean Tokens.
+
+You'll get all the provider and their code resources from below link
+
+https://www.terraform.io/docs/providers/index.html

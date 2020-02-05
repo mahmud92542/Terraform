@@ -1,0 +1,45 @@
+here we'll make a terraform file to create a droplet in digitalocean
+
+you can also follow this link for understanding more
+
+https://www.terraform.io/docs/providers/do/index.html
+
+the file extention of terraform is .tf
+
+let the this file name is 'digitalocean.tf'
+
+# Configure the DigitalOcean Provider
+
+provider "digitalocean" {
+  token = "your_token"
+}
+
+# Create a web server
+resource "digitalocean_droplet" "web" {
+  region = "give your region name where you want to create"
+  name = "any name you want"
+  size = "size of ram"
+  image = "image_name"
+}
+
+you have to download the plugin for digitalocean in your local mechine.
+you can see existing plugin details in '.terraform' folder which is hidden in your current corking directory.
+
+now write down the command, so it will findout automatically which plugin you need to install
+
+1. terraform init
+
+after excuting the 1st command, write 2nd one. this will show you what will happen if you excute your 'digitalocean.tf' file
+
+2. terraform plan
+
+3rd command will excute your 'digitalocean.tf' file
+
+3. terraform apply
+
+it will ask you a value and if you want to excute it, just write 'yes'
+after couple of sec check your digitalocean account and you'll find a server created. 
+
+there are two types of argument
+1. Required
+2. Optional

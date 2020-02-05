@@ -1,0 +1,20 @@
+After successfully creating a server,now you can also destroy the server by using terraform.
+
+below command will destroy all of your server which you write. 
+
+terraform destroy
+
+after writing this command it will ask you a value, and if you enter 'yes' it will destroy all of your server
+
+what if you want to destroy a particular server from your 'digitalocean.tf'. "suppose you have two server!"
+
+look at the example 2.1. and see 
+
+resource "digitalocean_droplet" "web"
+
+from this line you can specify a particular server name like this - digitalocean_droplet.web 
+after specify the particular server name you can destroy the targeted server by using below command
+
+terraform destroy -target digitalocean_droplet.web
+
+after writing this command it will ask you a value, and if you enter 'yes' it will destroy your specific server
